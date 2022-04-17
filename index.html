@@ -48,6 +48,39 @@
     <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal"> 
+            
+            <form class="modal-form">
+                <p class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</p>
+
+                <div class="form-field">
+                <label for="user-name">Имя</label>
+                <input type="text" name="user-name" id="user-name" />
+            </div>
+
+            <div class="form-field">
+                <label for="user-tel">Телефон</label>
+                <input type="tel" name="user-tel" id="user-tel"/>
+            </div>
+
+            <div class="form-field">
+                <label for="user-email">Почта</label>
+                <input type="email" name="user-email" id="user-email"/>
+            </div>
+
+            <div class="form-field">
+                <label for="user-comment">Комментарий</label>
+                <textarea type="text" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" name="agreed" id="agreed" checked />
+                <label for="agreed">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            </div>
+
+            <div class="form-field">
+                <button type="submit">Отправить</button>
+            </div>
+            </form>
             <button class="hero-button-close" type="button" data-modal-close>
         </button></div>
     </div>    
