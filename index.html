@@ -50,26 +50,26 @@
         <div class="modal"> 
             
             <form class="modal-form">
-                <p class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</p>
+                <h2 class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</h2>
 
-                <div class="form-field">
+                <div class="form-field data">
                 <label for="user-name">Имя</label>
                 <input type="text" name="user-name" id="user-name" />
             </div>
 
-            <div class="form-field">
+            <div class="form-field data">
                 <label for="user-tel">Телефон</label>
                 <input type="tel" name="user-tel" id="user-tel"/>
             </div>
 
-            <div class="form-field">
+            <div class="form-field data">
                 <label for="user-email">Почта</label>
                 <input type="email" name="user-email" id="user-email"/>
             </div>
 
-            <div class="form-field">
+            <div class="form-field data">
                 <label for="user-comment">Комментарий</label>
-                <textarea type="text" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
+                <textarea class="comment" type="text" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
             </div>
 
             <div class="form-field">
@@ -78,7 +78,7 @@
             </div>
 
             <div class="form-field">
-                <button type="submit">Отправить</button>
+                <button class="modal-button" type="submit">Отправить</button>
             </div>
             </form>
             <button class="hero-button-close" type="button" data-modal-close>
@@ -376,8 +376,13 @@
         </ul>
     </div>
     <div class="subscribe">
-        <p class="subscribe-titel">Подпишитесь на рассылку</p>
-        <button class="subscribe-button" type="button">Подписаться</button>
+        <h2 class="subscribe-titel">Подпишитесь на рассылку</h2>
+        <form class="subscribe-form">
+            <input class="subscribe-email" type="email" name="user-email" placeholder="E-mail" id="email" /> 
+            <button class="subscribe-button" type="submit">Подписаться
+                <svg class="subscribe-icon"><use href="./images/symbol-defs (2).svg#icon-send" width="24px" height="24px"></use> </svg>
+                </button>
+        </form>
     </div>
 </div>
 </footer>
