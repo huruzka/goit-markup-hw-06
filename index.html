@@ -53,22 +53,25 @@
                 <h2 class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</h2>
 
                 <div class="form-field data">
-                <label for="user-name">Имя</label>
-                <input type="text" name="user-name" id="user-name" />
+                <label class="label" for="user-name">Имя</label>
+                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#person-black-18dp-1"></use></svg>
+                <input class="line" type="text" name="user-name" id="user-name" />
             </div>
 
             <div class="form-field data">
-                <label for="user-tel">Телефон</label>
-                <input type="tel" name="user-tel" id="user-tel"/>
+                <label class="label" for="user-tel">Телефон</label>
+                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#Vector"></use></svg>
+                <input class="line"  type="tel" name="user-tel" id="user-tel"/>
             </div>
 
             <div class="form-field data">
-                <label for="user-email">Почта</label>
-                <input type="email" name="user-email" id="user-email"/>
+                <label class="label" for="user-email">Почта</label>
+                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#email-black-18dp-1"></use></svg>
+                <input class="line" type="email" name="user-email" id="user-email"/>
             </div>
 
             <div class="form-field data">
-                <label for="user-comment">Комментарий</label>
+                <label class="label" for="user-comment">Комментарий</label>
                 <textarea class="comment" type="text" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
             </div>
 
@@ -380,9 +383,7 @@
         <h2 class="subscribe-titel">Подпишитесь на рассылку</h2>
         <form class="subscribe-form">
             <input class="subscribe-email" type="email" name="user-email" placeholder="E-mail" id="email" /> 
-            <button class="subscribe-button" type="submit">Подписаться
-                <svg class="subscribe-icon"><use href="./images/symbol-defs (2).svg#icon-send" width="24px" height="24px"></use> </svg>
-                </button>
+            <button class="subscribe-button" type="submit">Подписаться  <svg ><use class="subscribe-icon" href="./images/symbol-defs (2).svg#icon-send" width="24px" height="24px"></use> </svg></button>
         </form>
     </div>
 </div>
