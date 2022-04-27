@@ -393,7 +393,7 @@ margin-bottom: 30px;
     border-color: var(--blue-color);
     background-color: var(--blue-color);
     background-image: url(../images/icon\ check.svg);
-    background-size: cover;
+    background-size: content;
     background-repeat: no-repeat;
 }
 
@@ -433,23 +433,29 @@ margin-bottom: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
+    padding: auto;
     
-    border: 1px solid rgba(0, 0, 0, 0.1);;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     outline: none;
     background-color: transparent;
     }
 
 .hero-button-close-icon{
-   
-    width: 11px;
-    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+
+    width: 18px;
+    height: 18px;
     fill: #000;
 }
 
-.hero-button-close:hover,
-.hero-button-close:focus{
-    color: var(--blue-color);
+.hero-button-close-icon:hover,
+.hero-button-close-icon:focus{
+    fill: var(--blue-color);
     cursor: pointer;
 }
 
