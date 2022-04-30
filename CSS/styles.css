@@ -65,7 +65,7 @@ body{
 header{
     border-bottom: 1px solid var(--border-color);
 }
-.nav-logo{
+.nav__logo{
     padding: 24px 0px 25px 0px;
     text-decoration: none;
     font-family: Raleway;
@@ -76,7 +76,7 @@ header{
     color: var(--blue-color)
 }
 
-.style-logo{
+.nav__logo--style{
     color: var(--titels-color);
 }
 
@@ -90,35 +90,27 @@ header{
     line-height: 1.14;
     letter-spacing: 0.02em;
       }
-.nav-list{
+.nav__list{
      display: flex;
      margin-left: 93px;
     }
-.nav-list .nav-item + .nav-item{
+.nav__list .nav__item + .nav__item{
     margin-left: 50px;
 }
-.nav-link{
+.nav__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--titels-color);
 }
-.contact-list{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-.contact-list .item + .item{
-    margin-left: 50px;
-}
 
-.current{
+.nav__link--current{
     position: relative;
     color: var(--blue-color);
 }
 
-.nav-link.current::after{
+.nav__link--current::after{
     content: "";
     position: absolute;
     left: 0;
@@ -133,20 +125,42 @@ header{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current:hover::after,
-.nav-link.current:focus::after{
+.nav__link--current:hover::after,
+.nav__link--current:focus::after{
     transform: scaleX(1);
 }
 
-.nav-item{
+.nav__item{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item :hover,
-.nav-item :focus{
+.nav__item :hover,
+.nav__item :focus{
     color: var(--blue-color);
     background-color: var(--white-color);
+}
+
+/* Контакты*/
+.contact{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact:hover,
+.contact:focus{
+    fill: var(--blue-color);
+    color: var(--blue-color);
+    background-color: var(--white-color);
+}
+
+.contact__item + .contact__item{
+    margin-left: 50px;
 }
 
 .email,
@@ -161,23 +175,10 @@ header{
     fill: var(--text-color);  
     }
 
-.tel-icon,
-.email-icon{
+.tel__icon,
+.email__icon{
     margin-right: 10px;
 } 
-
-.contact-list{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-list :hover,
-.contact-list :focus{
-    fill: var(--blue-color);
-    color: var(--blue-color);
-    background-color: var(--white-color);
-}
 
 /* стили секция герой*/
 .hero-section{
