@@ -25,14 +25,14 @@
     <ul class="contact">
         <li class="contact__item">
                 <a class="email" href="mailto:info@devstudio.com">
-                <svg class="email-icon" width="16px"  height="12px">
+                <svg class="email__icon" width="16px"  height="12px">
                 <use href="./images/symbol-defs.svg#envelope"></use>
                 </svg>info@devstudio.com
                 </a>
         </li>
-        <li class="item">
+        <li class="contact__item">
                 <a class="tel" href="tel:+380961111111">
-                <svg class="tel-icon" width="10px"  height="16px"><use href="./images/symbol-defs.svg#smartphone"></use>
+                <svg class="tel__icon" width="10px"  height="16px"><use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>+38 096 111 11 11
                 </a>
         </li>
@@ -42,59 +42,58 @@
 </header>
 <!--Главная секция-->
 <main>
-    <section class="hero-section">
+    <section class="hero">
     <div class="container">
-    <h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
-    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
-    <div class="backdrop is-hidden" data-modal>
+    <h1 class="hero__titel">Эффективные решения для вашего бизнеса</h1>
+    <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+    <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal"> 
-            
-            <form class="modal-form">
-                <p class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="form">
+                <p class="form__titel">Оставьте свои данные, мы вам перезвоним</p>
 
-                <div class="form-field data">
-                <label class="label" for="user-name">Имя</label>
-                <div class="focus">
-                <input class="line" type="text" name="user-name" id="user-name" />
-                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#person-black-18dp-1"></use></svg>
-            </div>
-            </div>
-
-            <div class="form-field data">
-                <label class="label" for="user-tel">Телефон</label>
-                <div class="focus">
-                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#Vector"></use></svg>
-                <input class="line"  type="tel" name="user-tel" id="user-tel"/>
+                <div class="form__field data">
+                <label class="form__label" for="user-name">Имя</label>
+                <div class="form__focus">
+                <input class="form__line" type="text" name="user-name" id="user-name" />
+                <svg class="form__icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#person-black-18dp-1"></use></svg>
             </div>
             </div>
 
-            <div class="form-field data">
-                <label class="label" for="user-email">Почта</label>
-                <div class="focus">
-                <svg class="icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#email-black-18dp-1"></use></svg>
-                <input class="line" type="email" name="user-email" id="user-email"/>
+            <div class="form__field data">
+                <label class="form__label" for="user-tel">Телефон</label>
+                <div class="form__focus">
+                <svg class="form__icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#Vector"></use></svg>
+                <input class="form__line"  type="tel" name="user-tel" id="user-tel"/>
             </div>
             </div>
 
-            <div class="form-field data">
-                <label class="label" for="user-comment">Комментарий</label>
-                <textarea class="comment" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
+            <div class="form__field data">
+                <label class="form__label" for="user-email">Почта</label>
+                <div class="form__focus">
+                <svg class="form__icon" width="18px" height="18px"><use href="./images/symbol-defs (2).svg#email-black-18dp-1"></use></svg>
+                <input class="form__line" type="email" name="user-email" id="user-email"/>
+            </div>
             </div>
 
-            <div class="form-field checkbox">
+            <div class="form__field data">
+                <label class="form__label" for="user-comment">Комментарий</label>
+                <textarea class="form__comment" name="user-comment" placeholder="Введите текст" id="user-comment" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form__field checkbox">
                 <label >
                 <input class="checkbox" type="checkbox" name="agreed">
-                <span class="checkbox-icon"></span> 
-                Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+                <span class="checkbox__icon"></span> 
+                Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия договора</a>
             </label>
             </div>
 
-            <div class="form-field">
-                <button class="modal-button" type="submit">Отправить</button>
+            <div class="form__field">
+                <button class="modal__button" type="submit">Отправить</button>
             </div>
             </form>
-            <button class="hero-button-close" type="button" data-modal-close>
-                <svg class="hero-button-close-icon"> <use   href="./images/symbol-defs (3).svg#close-black-18dp-2-1">
+            <button class="hero__button--close" type="button" data-modal-close>
+                <svg class="hero__button--close-icon"> <use   href="./images/symbol-defs (3).svg#close-black-18dp-2-1">
                     </use></svg>         
         </button>
     </div>
