@@ -278,11 +278,11 @@ img {
     margin-bottom: 8px;
 }
 .social-media-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
 }
 .social-media-icons{
     width: 40px;
@@ -344,13 +344,19 @@ img {
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+    margin-top: 96px;
 }
 .portfolio-list{
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 96px;
+    /*column-gap: 24px;
     row-gap: 48px;
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);*/
 }
 .portfolio-item{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -402,14 +408,20 @@ img {
     letter-spacing: 0.02em;
     color:#F4F4FD;
     width: 264px;
+    margin-bottom: 66px;
 }
 
 .footer .container{
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    /*gap: 72px;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*align-items: baseline;*/
 }
 .footer-box{
-    margin-right: 120px;
+    /*margin-right: 120px;*/
 }
 .social-media-title{
     font-weight: 500;
@@ -429,11 +441,14 @@ img {
     background-color: #31d0aa;
 }
 .social-media-block{
-    margin-right: 80px;
+    margin-bottom: 76px;
+    /*margin-right: 80px;*/
 }
 .subscribe-form{
     display: flex;
-    gap:24px;
+    flex-direction: column;
+    gap:16px;
+    /*gap:24px;*/
 }
 .subscribe-text{
     font-weight: 500;
@@ -447,7 +462,8 @@ img {
     padding: 8px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    width: 264px;
+    min-width:288px;
+    /*width: 264px;*/
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -465,7 +481,9 @@ img {
     letter-spacing: 0.04em;
 }
 .subscribe-btn{
-        min-width: 165px;
+        width: 165px;
+        /*min-width: 165px;*/
+        margin:0 auto;
         height: 40px;
         border: none;
         border-radius: 4px;
@@ -513,14 +531,18 @@ img {
     transform: translate(-50%, -50%) scale(1.5);
 }
 .modal{
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
+    /*width: 408px;
+    min-height: 584px;*/
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*padding-left: 24px;
+    padding-right: 24px;*/
     padding-bottom: 24px;
     position: absolute;
     top: 50%;
@@ -629,7 +651,8 @@ img {
     padding: 8px 16px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 360px;
+    width: 256px;
+    /*width: 360px;*/
     height: 120px;
     resize: none;
     font-size: 12px;
