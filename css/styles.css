@@ -56,7 +56,6 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -87,8 +86,6 @@ img {
     letter-spacing: 0.03em;
     font-weight: 700;
     text-transform: uppercase;
-    
-    /**/
 }
 .logo-header-studio {
     color: #2e2f42;
@@ -122,6 +119,113 @@ img {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.menu-open-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24;
+    height: 24;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+}
+
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-bottom: 40px;
+    padding-right: 24px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mob-menu-close-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.close-icon {
+    fill: #2E2F42;
+}
+
+.mob-menu-nav {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.mob-menu-links-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.active {
+    color: #4D5AE5;
+}
+
+.mob-menu-contacts {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+}
+
+.mob-menu-contact-item:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.mob-social-media-list {
+    display: flex;
+    gap: 40px;
+}
+
+.mob-social-media-icons {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    *align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.mob-social-icon-link {
+    width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+       align-items: center;
+        justify-content: center;
+        fill:#E7E9FC
+}
+
+.mob-team-icon {
+    align-items: center;
+        justify-content: center;
+}
+
 
 .hero {
     max-width: 320px;
