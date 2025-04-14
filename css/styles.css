@@ -64,21 +64,21 @@ img {
 }
 
 .container {
-    width: 288px;
-   /*width: 1158px;*/
+    width: 320px;
     margin: 0 auto;
-    /*padding: 0 15px;*/
 }
-.header .container{
-    display: flex;
-    justify-content: space-between;
-}
-/*.header {
+
+.header {
+    min-width: 320px;
+    height: 56px;
     border-bottom: 1px solid #E7E9FC;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
-}*/
+}
+.header-navigation{
+    padding: 16px;
+}
 .header-logo {
     color: #4d5ae5;
     font-family: 'Raleway', sans-serif;
@@ -87,23 +87,13 @@ img {
     letter-spacing: 0.03em;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 24px 0;
-    margin-right: 76px;
+    
+    /**/
 }
 .logo-header-studio {
     color: #2e2f42;
     font-weight: 700;
     letter-spacing: 0.02em;
-}
-/*.header-navigation{
-    display: flex;
-    align-items: center;
-}
-.header-link-studio:hover,
-.header-link-studio:focus{
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-links{
     display: flex;
@@ -112,22 +102,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
     align-items: center;
-}
-.header-links .current{
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #404bbf;
-    position: relative;
-}
-.header-links .current::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    border-radius: 2px;
-    width: 48px;
-    height: 4px;
-    background-color: #404bbf;
+    display: none;
 }
 .header-link-studio {
     color: #2e2f42;
@@ -141,15 +116,15 @@ img {
     align-items: baseline;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: none;
 }
 .contacts-lits{
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
+}
 
 .hero {
     max-width: 320px;
-    /*max-width: 1440px;*/
     margin: 0 auto;
     padding: 188px 0;
     background-color: #2E2F42;
@@ -197,7 +172,6 @@ img {
 }
 
 .philosophy {
-    /*padding: 120px 0;*/
     border-radius: 0;
     margin-bottom: 96px;
 }
@@ -207,20 +181,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px;
-    /*gap: 24px;*/
-}
-.philosophy-column{
-    /*flex-basis: calc((100% - 3 * 24px) / 4);*/
-}
-.philosophy-icons{
-    /*display: flex;
-    align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
-        border-radius: 4px;
-        border: 1px solid #8e8f99;
-        margin-bottom: 8px;*/
 }
 .philosophy-subtitle{
     font-weight: 700;
@@ -727,17 +687,92 @@ img {
 
 
 @media (min-width:768px){
-    .hero{
+        .container {
+        width: 768px;
+    }
+    .header{
+        min-width: 768px;
+        height: 72px;
+    }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo{
+            margin-right: 76px;
+        }
+        .header-navigation {
+            display: flex;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .header-links {
+            display: flex;
+            gap: 40px;
+            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            align-items: center;
+        }
+        .header-link-studio:hover,
+        .header-link-studio:focus {
+            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+        }
+                .header-links .current {
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    color: #404bbf;
+                    position: relative;
+                }
+        
+                .header-links .current::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    display: block;
+                    border-radius: 2px;
+                    width: 48px;
+                    height: 4px;
+                    background-color: #404bbf;
+                }
+                .contacts {
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                font-style: normal;
+                justify-content: flex-end;
+                                    align-items: baseline;
+                                    padding-top: 16px;
+                                    padding-bottom: 16px;
+                                    padding-right: 16px;
+                                }
+                                .contacts-lits {
+                                    letter-spacing: 0.02em;
+                                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                }
+        .hero{
         max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_tab_1x.jpg);
     }
     @media screen and (min-resolution:2x) {
-    .hero {
+        .hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_tab_2x.jpg);
-            }
+    }
+        .philosophy-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+    }
+    .philosophy-column {
+    flex-basis: calc((100% - 1* 24px) / 2);
+    }
     .modal{
         width: 408px;
         min-height: 584px;
@@ -752,6 +787,10 @@ img {
 
 
 @media (min-width:1158px) {
+    .container {
+            width: 1158px;
+            padding: 0 15px;
+        }
         .hero {
                 max-width: 1440px;
                 background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -765,4 +804,35 @@ img {
                         url(../images/hero_pic_desk_2x.jpg);
                 }
             }
+        .contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        font-style: normal;
+        justify-content: flex-end;
+        align-items: baseline;
+        font-size: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        }
+    .philosophy{
+        padding: 120px 0;
+    }
+        .philosophy-list{
+            flex-wrap: nowrap;
+        }
+        .philosophy-column {
+            flex-basis: calc((100% - 3 * 24px) / 4);
+        }
+    
+        .philosophy-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            background-color: #f4f4fd;
+            border-radius: 4px;
+            border: 1px solid #8e8f99;
+            margin-bottom: 8px;
+        }
 }
