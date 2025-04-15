@@ -274,8 +274,7 @@ img {
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.philosophy {
+.philosophy{
     border-radius: 0;
     margin-bottom: 96px;
 }
@@ -299,6 +298,9 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.philosophy-icons{
+    display: none;
 }
 
 
@@ -479,15 +481,11 @@ img {
 .footer .container{
     display: flex;
     flex-direction: column;
-    /*gap: 72px;*/
     align-items: center;
     justify-content: center;
     text-align: center;
-    /*align-items: baseline;*/
 }
-.footer-box{
-    /*margin-right: 120px;*/
-}
+
 .social-media-title{
     font-weight: 500;
     font-size: 16px;
@@ -507,13 +505,11 @@ img {
 }
 .social-media-block{
     margin-bottom: 76px;
-    /*margin-right: 80px;*/
 }
 .subscribe-form{
     display: flex;
     flex-direction: column;
     gap:16px;
-    /*gap:24px;*/
 }
 .subscribe-text{
     font-weight: 500;
@@ -783,103 +779,108 @@ img {
 
 
 @media (min-width:768px){
-        .container {
+    .container {
         width: 768px;
     }
     .header{
         min-width: 768px;
         height: 72px;
     }
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-logo{
-            margin-right: 76px;
-        }
-        .header-navigation {
-            display: flex;
-            align-items: center;
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-        .header-links {
-            display: flex;
-            gap: 40px;
-            line-height: 1.5;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-            align-items: center;
-        }
-        .header-link-studio:hover,
-        .header-link-studio:focus {
-            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 1px 6px rgba(46, 47, 66, 0.08);
-        }
-                .header-links .current {
-                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                    color: #404bbf;
-                    position: relative;
-                }
-        
-                .header-links .current::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -1px;
-                    display: block;
-                    border-radius: 2px;
-                    width: 48px;
-                    height: 4px;
-                    background-color: #404bbf;
-                }
-                .contacts {
-                font-size: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                font-style: normal;
-                justify-content: flex-end;
-                                    align-items: baseline;
-                                    padding-top: 16px;
-                                    padding-bottom: 16px;
-                                    padding-right: 16px;
-                                }
-                                .contacts-lits {
-                                    letter-spacing: 0.02em;
-                                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                }
-        .hero{
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo{
+        margin-right: 76px;
+    }
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .header-links {
+        display: flex;
+        gap: 40px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        align-items: center;
+    }
+    .header-link-studio:hover,
+    .header-link-studio:focus {
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+    .header-links .current {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #404bbf;
+        position: relative;
+    }
+    .header-links .current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        display: block;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        background-color: #404bbf;
+    }
+    .contacts {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-style: normal;
+        justify-content: flex-end;
+        align-items: baseline;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+    }
+    .contacts-lits {
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .menu-open-btn{
+        display: none;
+    }
+    .hero{
         max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_tab_1x.jpg);
     }
     @media screen and (min-resolution:2x) {
-        .hero {
+    .hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_tab_2x.jpg);
     }
-        .philosophy-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
+    .philosophy-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
     }
     .philosophy-column {
-    flex-basis: calc((100% - 1* 24px) / 2);
+        flex-basis: calc((100% - 1* 24px) / 2);
+    }
+    .philosophy-subtitle{
+        text-align: start;
     }
     .team-list {
-            gap: 24px;
-            flex-basis: calc((100% - 1 * 24px) / 2);
-        }
-        .portfolio-list{
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: 24px;
-            row-gap: 48px;
-            flex-basis: calc((100% - 48px) / 2);
-        }
+        gap: 24px;
+        flex-basis: calc((100% - 1 * 24px) / 2);
+    }
+    .portfolio-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
     .modal{
         width: 408px;
         min-height: 584px;
@@ -889,28 +890,49 @@ img {
     .modal-textarea{
         width: 360px;
     }
+    .footer.container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .footer-tab-box{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .footer-box{
+        text-align: start;
+    }
+    .subscribe-form{
+        flex-direction: row;
+        gap:24px;
+    }
+    .subscribe-text{
+        text-align: start;
+    }
 }
 
 
 @media (min-width:1158px) {
     .container {
-            width: 1158px;
-            padding: 0 15px;
-        }
-        .hero {
-                max-width: 1440px;
-                background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                    url(../images/hero_pic_desk_1x.jpg);
-            }
+        width: 1158px;
+        padding: 0 15px;
+    }
+    .hero {
+        max-width: 1440px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero_pic_desk_1x.jpg);
+    }
         
-            @media screen and (min-resolution:2x) {
-                .hero {
-                    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-                            rgba(46, 47, 66, 0.7)),
-                        url(../images/hero_pic_desk_2x.jpg);
-                }
-            }
-        .contacts {
+    @media screen and (min-resolution:2x) {
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/hero_pic_desk_2x.jpg);
+        }
+    }
+    .contacts {
         display: flex;
         flex-direction: row;
         gap: 40px;
@@ -924,36 +946,47 @@ img {
     .philosophy{
         padding: 120px 0;
     }
-        .philosophy-list{
-            flex-wrap: nowrap;
-        }
-        .philosophy-column {
-            flex-basis: calc((100% - 3 * 24px) / 4);
-        }
+    .philosophy-list{
+        flex-wrap: nowrap;
+    }
+    .philosophy-column {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+    .philosophy-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+    }
+    .team{
+        padding: 120px 0;
+    }
+    .team-list{
+        gap: 24px;
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+    .portfolio {
+        padding: 120px 0 120px 0;
+    }
+    .portfolio-list{
+        column-gap: 24px;
+        row-gap: 48px;
+        flex-basis: calc((100% - 2 * 24px) / 3);
+    }
+    .footer .container{
+        flex-direction: row;
+        align-items: baseline;
+        gap: 72px;
+    }
+    .footer-box {
+        margin-right: 120px;
+    }
+    .social-media-block{
+        margin-right: 80px;
+    }
     
-        .philosophy-icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 112px;
-            background-color: #f4f4fd;
-            border-radius: 4px;
-            border: 1px solid #8e8f99;
-            margin-bottom: 8px;
-        }
-        .team{
-            padding: 120px 0;
-        }
-        .team-list{
-            gap: 24px;
-            flex-basis: calc((100% - 3 * 24px) / 4);
-        }
-        .portfolio {
-            padding: 120px 0 120px 0;
-        }
-        .portfolio-list{
-            column-gap: 24px;
-            row-gap: 48px;
-            flex-basis: calc((100% - 48px) / 3);
-        }
 }
