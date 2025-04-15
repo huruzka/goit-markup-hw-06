@@ -45,14 +45,14 @@
         </address>
         <button 
         class="menu-open-btn" 
-        type="button" >
+        type="button" data-menu-open>
             <svg class="mob-menu-open-icon" width="16.8" height="14.4">
             <use href="./images/icons.svg#icon-Group"/>
             </svg>
         </button>
         </div>
-        <div class="mob-menu ">
-            <button class="mob-menu-close-btn" type="button">
+        <div class="mob-menu" data-menu>
+            <button class="mob-menu-close-btn" type="button" data-menu-close>
                 <svg class="close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -554,5 +554,6 @@
     </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mob-menu.js"></script>
 </body>
 </html>
