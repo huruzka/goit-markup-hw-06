@@ -1026,5 +1026,14 @@ img {
         flex-direction: row;
         gap: 24px;
     }
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     
+    .modal-textarea {
+        width: 360px;
+    }
 }
