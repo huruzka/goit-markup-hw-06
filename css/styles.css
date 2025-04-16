@@ -132,6 +132,7 @@ img {
     border: none;
     background-color: transparent;
     margin: 0;
+    padding: 0;
 }
 
 .mob-menu {
@@ -163,7 +164,11 @@ img {
     right: 24px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .close-icon {
@@ -611,7 +616,7 @@ img {
 .modal-close-btn{
     width: 24px;
     height: 24px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -782,7 +787,7 @@ img {
 @media (min-width:768px){
     .container {
         width: 768px;
-        padding: 0 15px;
+        padding: 0;
     }
     .header{
         min-width: 768px;
@@ -878,6 +883,7 @@ img {
         flex-basis: calc((100% - 1 * 24px) / 2);
     }
     .portfolio-list{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -926,12 +932,13 @@ img {
 @media (min-width:1158px) {
     .container {
         width: 1158px;
-        padding: 0 15px;
+        padding: 0;
     }
     .hero {
         max-width: 1440px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_desk_1x.jpg);
+        margin-bottom: 0;
     }
         
     @media screen and (min-resolution:2x) {
@@ -954,6 +961,7 @@ img {
         }
     .philosophy{
         padding: 120px 0;
+        margin-bottom: 0;
     }
     .philosophy-list{
         flex-wrap: nowrap;
@@ -981,21 +989,42 @@ img {
     .portfolio {
         padding: 120px 0 120px 0;
     }
+    .portfolio-title{
+        margin-top: 0;
+    }
     .portfolio-list{
+        flex-direction: row;
+        flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 48px;
         flex-basis: calc((100% - 2 * 24px) / 3);
+        margin-bottom: 0;
     }
     .footer .container{
         flex-direction: row;
         align-items: baseline;
+        text-align: start;
         gap: 72px;
+    }
+    .footer-tab-box{
+        display: inline-flex;
     }
     .footer-box {
         margin-right: 120px;
     }
     .social-media-block{
         margin-right: 80px;
+        margin-bottom: 0;
+    }
+    .footer-text{
+        margin-bottom: 0;
+    }
+    .subscribe-input {
+        width: 264px;
+    }
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
     }
     
 }
