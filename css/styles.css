@@ -70,7 +70,8 @@ img {
 
 .header {
     min-width: 320px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #E7E9FC;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -763,7 +764,7 @@ img {
 @media (min-width:768px){
     .container {
         width: 768px;
-        padding: 0;
+        padding: 0 16px;
         margin: 0 auto;
     }
     .mob-menu{
@@ -771,8 +772,12 @@ img {
     }
     .header{
         min-width: 768px;
-        height: 72px;
         padding-top: 0;
+        padding-bottom: 0;
+            border-bottom: 1px solid #E7E9FC;
+                box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                    0px 1px 1px rgba(46, 47, 66, 0.16),
+                    0px 1px 6px rgba(46, 47, 66, 0.08);
     }
     .header .container {
         display: flex;
@@ -826,8 +831,7 @@ img {
         justify-content: flex-end;
         align-items: baseline;
         padding-top: 16px;
-        padding-bottom: 16px;
-        padding-right: 16px;
+        padding-bottom: 0;
     }
     .contacts-lits {
         letter-spacing: 0.02em;
@@ -904,7 +908,7 @@ img {
 @media (min-width:1158px) {
     .container {
         width: 1158px;
-        padding: 0;
+        padding: 0 15px;
         margin: 0 auto;
     }
     .hero {
@@ -916,11 +920,11 @@ img {
         
     @media screen and (min-resolution:2x) {
         .hero {
+            padding: 188px 0;
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
             url(../images/hero_pic_desk_2x.jpg);
-            padding: 188px 0;
-        }
+            
     }
     .contacts {
         display: flex;
@@ -939,6 +943,7 @@ img {
         border-radius: 0;
     }
     .philosophy-list{
+        flex-direction: row;
         flex-wrap: nowrap;
     }
     .philosophy-column {
