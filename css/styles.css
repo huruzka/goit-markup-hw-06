@@ -916,15 +916,17 @@ img {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero_pic_desk_1x.jpg);
         margin-bottom: 0;
+        padding: 188px 0;
     }
         
     @media screen and (min-resolution:2x) {
         .hero {
-            padding: 188px 0;
+
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
             url(../images/hero_pic_desk_2x.jpg);
             
+        }
     }
     .contacts {
         display: flex;
