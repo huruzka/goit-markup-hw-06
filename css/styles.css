@@ -443,7 +443,7 @@ img {
 }
 
 .footer{
-    padding: 96px 0;
+    /*padding: 96px 0;*/
     background-color:#2E2F42;
 }
 .footer-logo {
@@ -864,7 +864,8 @@ img {
         text-align: start;
     }
     .team-list {
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
         flex-basis: calc((100% - 24px) / 2);
     }
     .portfolio-list{
@@ -872,7 +873,7 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 48px;
+        row-gap: 72px;
         flex-basis: calc((100% - 48px) / 2);
     }
     .modal{
