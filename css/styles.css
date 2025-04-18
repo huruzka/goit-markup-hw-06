@@ -928,11 +928,10 @@ img {
     }
         
     @media screen and (min-resolution:2x) {
-        .hero {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url(../images/hero_pic_desk_2x.jpg);
-            
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero_pic_desk_2x.jpg);
         }
     }
     .contacts {
@@ -948,7 +947,6 @@ img {
         }
     .philosophy{
         padding: 120px 0;
-        margin-bottom: 0;
         border-radius: 0;
     }
     .philosophy-list{
@@ -968,6 +966,15 @@ img {
         border: 1px solid #8e8f99;
         margin-bottom: 8px;
     }
+    .philosophy-subtitle{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .philosophy-text{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
     .team{
         padding: 120px 0;
     }
@@ -995,6 +1002,7 @@ img {
         align-items: baseline;
         text-align: start;
         gap: 0;
+        padding-left: 0;
     }
     .footer-box {
         margin-right: 120px;
